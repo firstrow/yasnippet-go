@@ -1,0 +1,18 @@
+#name: tsuite
+# --
+type ${1:name}TestSuite struct {
+	suite.Suite
+	repo *bargeRepository
+}
+
+func (s *$1TestSuite) SetupTest() {
+
+}
+
+func (s *$1TestSuite) TestOne() {
+     $0
+}
+
+func Test$1(t *testing.T) {
+	suite.Run(t, new($1TestSuite))
+}
