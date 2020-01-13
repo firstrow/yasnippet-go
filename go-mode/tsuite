@@ -5,11 +5,15 @@ type ${1:name}TestSuite struct {
 	repo *bargeRepository
 }
 
+func (s *$1TestSuite) SetupSuite() {
+
+}
+
 func (s *$1TestSuite) SetupTest() {
 
 }
 
-func (s *$1TestSuite) TestOne() {
+func (s *$1TestSuite) TestSomething() {
      $0
 }
 
