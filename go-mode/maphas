@@ -1,0 +1,3 @@
+if val, ok := ${1:mapname}[${2:keyname}]; ok {
+    $0
+}
